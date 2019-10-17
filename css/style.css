@@ -113,7 +113,10 @@ hr {
     display: block; 
     margin-top: 0;
 }
-
+.carosel{
+    height: 10000px;
+    width: 1000px;
+}
 .dropdown-menu {
     background-color: aliceblue;
     color: black;
