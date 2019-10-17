@@ -2,17 +2,15 @@
 <html>
 <head>
 	<title></title>
-
-
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-     <script type="text/javascript" src="jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="icons/css/fontawesome.min.css">
-    <link rel="stylesheet" type="text/css" href="icons/css/all.css">
+     <script type="text/javascript" src="../jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../icons/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../icons/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="../icons/css/all.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 </head>
 <body>
 <div class="container-fluid" id="top">
@@ -20,12 +18,12 @@
 <!-- Main Heading -->
   <header class="main-header">
     <div class="row">
-      <div class="col-md-2 col-sm-2"><img src="assets/logo.png"></img></div>
+      <div class="col-md-2 col-sm-2"><img src="../assets/logo.png"></img></div>
       <div class="title col-md-8 col-col-sm-8">
         <h2>Zilla Parishad High School -Pregnapur</h2>
         <h5>Gajwel(M),Siddipet(D),Telangana,502311</h5>
       </div>
-    <div class="col-sm-2"><img src="assets/tschelogo.png"></img></div>
+    <div class="col-sm-2"><img src="../assets/tschelogo.png"></img></div>
     </div>
   </header>
 <!-- Heading Closed-->
@@ -34,83 +32,89 @@
 <!-- Navigation Bar -->
   <nav class="navbar navbar-expand navbar-fixed-top">
       <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">zphsppur.com</a>
+        <a class="navbar-brand" href="../index.html">zphsppur.com</a>
       </div>
       <ul class="nav navbar-nav">
-      <li class="active items home"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="active items"><a class="nav-link" href="../index.html">HOME</a></li>
         <li class=" items nav-item dropdown">
          <a class="dropdown-toggle nav-link" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">ACADEMICS</a>
          <ul class="dropdown-menu">
-              <li class="items"><a class="nav-link" href="teachers.html">TEACHERS</a></li>
+              <li class="items"><a class="nav-link" href="../Teachers/teachers.html">TEACHERS</a></li>
               <li class="items"><a class="nav-link" href="#">TIMETABLE</a></li>
-              <li class="items"><a class="nav-link" href="academic-cal.html">ACADEMIC CALENDER</a></li> 
+              <li class="items"><a class="nav-link" href="../Academic-Calender/academic-cal.html">ACADEMIC CALENDER</a></li>
           </ul>
         </li>
-        <li class="items"><a class="nav-link" href="admissions.html">ADMISSIONS</a></li>
-       <span style="background-color: #304685;
-           border-radius: 0px 0px 10px 10px; color:white"> <li class="items"><a class="nav-link" href="contact.html">CONTACT</a>
-           </li></span>
-        <li class="items "><a class="nav-link" href="about.html">ABOUT</a></li>
+         <span style="background-color: #304685;
+    border-radius: 0px 0px 10px 10px; color:white"> <li class="items"><a class="nav-link" href="admissions.html">ADMISSIONS</a></li></span>
+        <li class="items con"><a class="nav-link" href="../Contact/contact.html">CONTACT</a></li>
+        <li class="items active"><a class="nav-link" href="../About/about.html">ABOUT</a></li>
       </ul>
   </nav>
 
 <!-- Navigation Bar Closed -->
+<!-- Admimssion Open -->
+<form class="adimission">
+    <table align="center" cellspacing="10" cellpadding="8px">
+        <h3 style="text-align:center">Admission Form</h3>
+        <hr>
+        <tr>
+            <td>
+                <label>First Name:</lable>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="text" class="fname">
+            </td>
+             <td>
+                <label>Last Name:</lable>
+                &nbsp&nbsp&nbsp&nbsp
+                <input type="text" class="lname">
+            </td>
+        </tr>
+        <tr>
+			<td>
+				<label >Gender</label>
+                &nbsp&nbsp
+				<input type="radio" name="gen" value="Male" style="font-size:8px;">Male
+				<input type="radio" name="gen" value="Female" style="font-size:8px;">Female
+			</td>
+            <td>
+               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDOB:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="date" name="bday">
+            </td>
+		</tr>
+         <tr>
+            <td>
+                <label>Father Name:</lable>
+                &nbsp&nbsp&nbsp
+                <input type="text" class="fathername">
+            </td>
+             <td>
+                <label>Occupation</lable>
+                &nbsp&nbsp&nbsp
+                <input type="text" class="fatheroccupation">
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <label>Mother Name:</lable>
+                &nbsp
+                <input type="text" class="mothername">
+            </td>
+             <td>
+                <label>Occupation:</lable>
+                &nbsp&nbsp
+                <input type="text" class="motheroccupation">
+            </td>
+        </tr>
+        <tr>
+            <td style="position:relative;;left:126px;" align="center">
+                <!-- <input type="button" class="btn-reg" value="Register"> -->
+                <button class="btn-reg">Register</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<br>
 <br>
 
-
-<div class="container">
-<span> 
-  <h3 style="font-weight:200px; text-align:center">Send Us</h3>
-</span>
-<hr>
-    <div class="row">
-      <div class="col-sm-8 col-lg-8 contact-form"
-            <form method="post">
-                                <div class="form-group name">
-                                    <label for="name">Name</label>
-                                    <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name">
-                                </div><!--//form-group-->
-                                <div class="form-group email">
-                                    <label for="email">Email<span class="required">*</span></label>
-                                    <input id="email"  name="email" type="email" class="form-control" placeholder="Enter your email">
-                                </div><!--//form-group-->
-                                <div class="form-group phone">
-                                    <label for="phone">Phone</label>
-                                    <input id="phone" name="phone" type="tel" class="form-control" placeholder="Enter your contact number">
-                                </div><!--//form-group-->
-                                <div class="form-group message">
-                                    <label for="message">Message<span class="required">*</span></label>
-                                    <textarea id="message" name="message" class="form-control" rows="6" placeholder="Enter your message here..."></textarea>
-                                </div><!--//form-group-->
-                                <button type="submit" class="btn btn-theme">Send message</button>
-             </form> 
-      </div>
-      <div class="col-sm-4 col-lg-4">
-          <div class="contact-box">
-            <ul class="list-unstyled">
-                <li><i class="fa fa-phone mr-3" aria-hidden="true">Phone: +91 99 086 22064</i></li>
-                <li><i class="fa fa-fax mr-3" aria-hidden="true">Fax: +0123456789</i></li>
-                <li><i class="fas fa-envelope mr-3" aria-hidden="true">Mail: afroz24242@gmail.com</i></li>
-            </ul>
-          </div>
-      </div>
-    </div>
-</div>
-<br>
-
-<hr>
-<div class="container map">
-<span> 
-  <h3 style="font-weight:200px;margin:0px 0px 0px 90px">Reach Us</h3>
-</span>
-<hr>
-  <div class="row">
-      <div class="col-sm-12 col-lg-12 ">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5887.9272248113675!2d78.70024921426784!3d17.83276906025312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc86df65a61799%3A0xc07b6e6e77749273!2sGovernment%20High%20School%20Pragnapur!5e0!3m2!1sen!2sin!4v1570806806083!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-  </div>
-</div>
-<br>
 <!-- Footer -->
 <footer class="page-footer font-small pt-4">
 
@@ -223,7 +227,7 @@
       </a>
     </div>
     <div class="col-sm-1">
-      <a href="#top"> <img src="assets/gototop.png" title="Go-To-Top" height="45px" width="45px"></img></a>
+      <a href="#top"> <img src="../assets/gototop.png" title="Go-To-Top" height="45px" width="45px"></img></a>
     </div>
   </div>
   <!-- Copyright -->
