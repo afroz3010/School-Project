@@ -113,10 +113,45 @@ hr {
     display: block; 
     margin-top: 0;
 }
-.carosel{
-    height: 10000px;
-    width: 1000px;
+.dimensionsofCarousel{
+    height:70%;
+    width: 70%;
 }
+@media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%;
+    } 
+}
+
+.image-gallery-title{
+    font-size: 34px;
+    color:aliceblue;
+    background-color:#304685;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom:10px;
+}
+
+.image-gallery-dimensions{
+    border: 2px solid black;
+    padding-top: 20px;
+}
+
+.carousel-multi-item-2 .card img {
+border-radius: 2px; 
+}
+
+.card{
+    height: 100px;
+    width: 100px;
+}
+
+.controls-top{
+    text-align: center;
+}
+
 .dropdown-menu {
     background-color: aliceblue;
     color: black;
